@@ -33,6 +33,8 @@ Python-kommandoer.
   from turtle import *
 
   forward(100)
+
+  mainloop()
   ```
 
 - [ ] Lagre programmet ditt som myturtle.py og velg `Run -> Run Module`. Ser du
@@ -65,6 +67,8 @@ Python-filer skal alltid ha filnavn som slutter med `.py`.
   backward(100)
   left(90)
   forward(50)
+
+  mainloop()
   ```
 
 ### Vinkler og grader
@@ -127,7 +131,10 @@ Vi kommer til å bruke disse instruksjonene på toppen av alle programmene våre
 denne leksjonen. Hvis du vil kan du forsøke å gi skilpadden en av de andre
 formene, som pil, og få den til å gå så fort eller sakte som du vil.
 
+### Hva gjør koden på slutten av programmet vårt? {.protip}
 
+`mainloop()` foteller at programmet skal ventes med å avsluttes til du lukker
+grafikkvinduet. Uten denne linjen vil grafikkvinduet ofte henge seg opp.
 # Steg 2: Tegne figurer! {.activity}
 
 La oss lage et kvadrat ved å fortelle skilpadden hvordan den skal bevege seg
@@ -151,6 +158,8 @@ rundt.
   right(90)
   forward(100)
   right(90)
+
+  mainloop()
   ```
 
   Lagre programmet ditt og velg `Run -> Run Module`. Ser du en firkant?
@@ -177,6 +186,8 @@ rundt.
   right(120)
   forward(100)
   right(120)
+
+  mainloop()
   ```
 
 - [ ] Kjør koden. Ser du en trekant?
@@ -208,6 +219,8 @@ Du kan også endre størrelsen på pennen ved å bruke `pensize`:
   pencolor("green")
   forward(100)
   right(120)
+
+  mainloop()
   ```
 
 - [ ] Kjør koden din, hva tegner den på skjermen? Denne koden tegner en tykk
@@ -242,6 +255,8 @@ firkant har 4 sider.
   for count in range(4):
       forward(100)
       right(90)
+
+  mainloop()
   ```
 
 - [ ] Lagre programmet og velg: Run -> Run module.
@@ -263,6 +278,8 @@ firkant har 4 sider.
   for count in range(4):
       forward(100)
   right(90)
+
+  mainloop()
   ```
 
 - [ ] Legg merke til at `forward` er indendert og `right` ikke er det. Hva tror
@@ -291,6 +308,8 @@ firkant har 4 sider.
   for count in range(sides):
       forward(length)
       right(angle)
+
+  mainloop()
   ```
 
 - [ ] Lagre programmet og velg: `Run -> Run module`.
@@ -341,6 +360,8 @@ multiplikasjon bruker Python `*`, og for divisjon skriver vi `/`. Hvis vi må sn
   for count in range(sides):
       forward(length)
       right(angle)
+
+  mainloop()
   ```
 
 - [ ] Nå kan du endre antall sider, klarer Python å gjøre jobben riktig? Prøv
@@ -372,6 +393,8 @@ multiplikasjon bruker Python `*`, og for divisjon skriver vi `/`. Hvis vi må sn
       forward(length)
       right(angle)
   end_fill()
+
+  mainloop()
   ```
 
   Akkurat som med `pencolor` velger `fillcolor` fargen skilpadden skal bruke for
@@ -407,6 +430,8 @@ bruke `penup()` og `pendown()` for å slå av og på at skilpadden skal tegne.
       forward(10)
       pendown()
       forward(20)
+
+  mainloop()
   ```
 
 - [ ] Dette burde tegne en stiplet strek over skjermen din. Kjør det og se!
